@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
+	"time"
 )
 
 func GoAndJS(name string) {
@@ -80,4 +81,11 @@ module.exports = {
 	}
 
 	fmt.Println("Project setup complete with Go backend + Vite + Tailwind frontend!")
+	fmt.Println("Starting VS code...")
+	time.Sleep(2 * time.Second)
+	vscodeCmd := exec.Command("cmd.exe", "/K", "code .")
+	if err := vscodeCmd.Run(); err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
 }
