@@ -63,18 +63,6 @@ This will place the govite binary in your $GOPATH/bin (make sure it’s in your 
 
 ---
 
-## ⚙️ Installation
-
-Clone this repo and build the CLI:
-
-```bash
-git clone <your-repo-url>
-cd <your-repo-name>
-go build -o create-app
-```
-
----
-
 ## 🎮 Usage
 
 Run the CLI and pass your project name:
